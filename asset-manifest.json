@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.c2b2227c.css",
-    "main.js": "/static/js/main.7570c47e.js",
-    "static/js/592.37b35f3a.chunk.js": "/static/js/592.37b35f3a.chunk.js",
-    "static/media/finderCat-logo.png": "/static/media/finderCat-logo.1fe4698c341accaec530.png",
-    "index.html": "/index.html",
-    "static/media/delete.svg": "/static/media/delete.823b0cf1b0b7e9cb7cad.svg",
-    "static/media/like-on.svg": "/static/media/like-on.6e2bc92649d2526b70d2.svg",
-    "main.c2b2227c.css.map": "/static/css/main.c2b2227c.css.map",
-    "main.7570c47e.js.map": "/static/js/main.7570c47e.js.map",
-    "592.37b35f3a.chunk.js.map": "/static/js/592.37b35f3a.chunk.js.map"
+    "main.css": "/cats-info/static/css/main.05f3d3bb.css",
+    "main.js": "/cats-info/static/js/main.b27bd7d5.js",
+    "static/js/592.37b35f3a.chunk.js": "/cats-info/static/js/592.37b35f3a.chunk.js",
+    "static/media/finderCat-logo.png": "/cats-info/static/media/finderCat-logo.1fe4698c341accaec530.png",
+    "index.html": "/cats-info/index.html",
+    "static/media/delete.svg": "/cats-info/static/media/delete.823b0cf1b0b7e9cb7cad.svg",
+    "static/media/like-on.svg": "/cats-info/static/media/like-on.6e2bc92649d2526b70d2.svg",
+    "main.05f3d3bb.css.map": "/cats-info/static/css/main.05f3d3bb.css.map",
+    "main.b27bd7d5.js.map": "/cats-info/static/js/main.b27bd7d5.js.map",
+    "592.37b35f3a.chunk.js.map": "/cats-info/static/js/592.37b35f3a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2b2227c.css",
-    "static/js/main.7570c47e.js"
+    "static/css/main.05f3d3bb.css",
+    "static/js/main.b27bd7d5.js"
   ]
 }
