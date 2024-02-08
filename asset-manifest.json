@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cats-info/static/css/main.b13b0804.css",
-    "main.js": "/cats-info/static/js/main.43e62a40.js",
+    "main.js": "/cats-info/static/js/main.1bfb4645.js",
     "static/js/592.37b35f3a.chunk.js": "/cats-info/static/js/592.37b35f3a.chunk.js",
     "static/media/finderCat-logo.png": "/cats-info/static/media/finderCat-logo.1fe4698c341accaec530.png",
     "static/media/like.svg": "/cats-info/static/media/like.87ed371465c7a6a1cd01.svg",
@@ -9,11 +9,11 @@
     "static/media/delete.svg": "/cats-info/static/media/delete.823b0cf1b0b7e9cb7cad.svg",
     "static/media/like_active.svg": "/cats-info/static/media/like_active.fe17a515669479b1e649.svg",
     "main.b13b0804.css.map": "/cats-info/static/css/main.b13b0804.css.map",
-    "main.43e62a40.js.map": "/cats-info/static/js/main.43e62a40.js.map",
+    "main.1bfb4645.js.map": "/cats-info/static/js/main.1bfb4645.js.map",
     "592.37b35f3a.chunk.js.map": "/cats-info/static/js/592.37b35f3a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b13b0804.css",
-    "static/js/main.43e62a40.js"
+    "static/js/main.1bfb4645.js"
   ]
 }
