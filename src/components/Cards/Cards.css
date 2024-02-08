@@ -100,7 +100,7 @@
 	/* z-index: 1; */
 }
 
-.button__toggle-like {
+.button__like {
 	width: 22px;
 	height: 19px;
 	background-image: url(../../images/like.svg);
@@ -115,4 +115,8 @@
 	top: 325px;
 	right: 5px;
 	/* margin: 3px 3px 15px 3px; */
+}
+
+.button__like_active {
+	background-image: url(../../images/like_active.svg);
 }

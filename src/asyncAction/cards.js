@@ -5,7 +5,16 @@ import { addFactsAction } from '../store/factsReducer';
 
 export const fetchCards = () => {
 	return function (dispatch) {
-		catsCardApi.getAllCards().then(json => dispatch(addCardsAction(json)))
+		catsCardApi.getAllCards().then(json => {
+			const newArray = json.map((value) => {
+				return {
+					id: value.id,
+					url: value.url,
+					like: false
+				}
+			})
+			dispatch(addCardsAction(newArray))
+		})
 	}
 }
 

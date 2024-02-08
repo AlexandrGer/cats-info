@@ -6,7 +6,6 @@ import { fetchFacts } from '../../asyncAction/cards';
 import './Cards.css';
 import { Link } from 'react-router-dom';
 import { FilterCheckbox } from '../FilterCheckbox/FilterCheckbox';
-import { cats } from '../../utils/cats';
 
 export const Cards = ({ onCardClick }) => {
 
@@ -20,19 +19,40 @@ export const Cards = ({ onCardClick }) => {
 		dispatch(fetchFacts());
 	}, []);
 
-	const removeCard = (cards) => {
-		dispatch({ type: 'DELETE_ONE_CARD', payload: cards.id })
+	const removeCard = (card) => {
+		dispatch({ type: 'DELETE_ONE_CARD', payload: card.id })
+	}
+
+	const deleteLikedCard = (card) => {
+		dispatch({ type: 'DELETE_LIKED_CARD', payload: card.id })
+		dispatch({ type: 'REMOVE_LIKE', payload: card.id })
 	}
 
 	const likeCard = (card) => {
-		dispatch({ type: 'ADD_LIKE_CARD', payload: card })
+		if (card.like === false) {
+			const newCard = {
+				id: card.id,
+				url: card.url,
+				like: true,
+			}
+			dispatch({ type: 'ADD_LIKED_CARD', payload: newCard })
+			dispatch({ type: 'PUT_LIKE', payload: card.id })
+		} else {
+			dispatch({ type: 'DELETE_LIKED_CARD', payload: card.id })
+			dispatch({ type: 'REMOVE_LIKE', payload: card.id })
+
+		}
+
+
 	}
 
 	const factsArray = facts.data;
 
 	const handleClick = (card) => {
-		onCardClick(card.target.src,
-			card.target.nextSibling.nextSibling.innerText);
+		onCardClick(
+			card.target.src,
+			card.target.nextSibling.nextSibling.innerText
+		);
 	}
 
 	const [value, setValue] = useState(false);
@@ -64,8 +84,12 @@ export const Cards = ({ onCardClick }) => {
 										<p className='card__description'>{factsArray[index]}</p>
 									</div>
 								</Link>
-								<button className='button button__delete' onClick={() => removeCard(cat)}></button>
-								<button className='button button__toggle-like'></button>
+								<button className='button button__delete' onClick={() => deleteLikedCard(cat)}></button>
+								<button
+									className={cat.like ? 'button button__like button__like_active' : 'button button__like'}
+									onClick={() => {
+										likeCard(cat);
+									}} />
 							</li>)}
 					</ul> :
 					<p> Кажется вам еще не приглянулся никакой факт...</p> :
@@ -83,9 +107,13 @@ export const Cards = ({ onCardClick }) => {
 								</div>
 							</Link>
 							<button className='button button__delete' onClick={() => removeCard(cat)}></button>
-							<button className='button button__toggle-like' onClick={() => likeCard(cat)}></button>
+							<button
+								className={cat.like ? 'button button__like button__like_active' : 'button button__like'}
+								onClick={() => {
+									likeCard(cat);
+								}}
+							/>
 						</li>
-
 					)}
 
 				</ul>
