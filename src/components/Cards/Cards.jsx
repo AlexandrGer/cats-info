@@ -15,8 +15,10 @@ export const Cards = ({ onCardClick }) => {
 	const likedFacts = useSelector(state => state.likedCards.likedCards);
 
 	useEffect(() => {
-		dispatch(fetchCards());
-		dispatch(fetchFacts());
+		if (cards.length === 0) {
+			dispatch(fetchCards());
+			dispatch(fetchFacts());
+		}
 	}, []);
 
 	const removeCard = (card) => {
@@ -42,8 +44,6 @@ export const Cards = ({ onCardClick }) => {
 			dispatch({ type: 'REMOVE_LIKE', payload: card.id })
 
 		}
-
-
 	}
 
 	const factsArray = facts.data;
