@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/cats-info/static/css/main.5dd7cf1f.css",
-    "main.js": "/cats-info/static/js/main.7e8df4cb.js",
-    "static/js/592.694cf300.chunk.js": "/cats-info/static/js/592.694cf300.chunk.js",
+    "main.css": "/cats-info/static/css/main.a48fe1bc.css",
+    "main.js": "/cats-info/static/js/main.dd50c6ee.js",
+    "static/js/592.37b35f3a.chunk.js": "/cats-info/static/js/592.37b35f3a.chunk.js",
     "static/media/finderCat-logo.png": "/cats-info/static/media/finderCat-logo.1fe4698c341accaec530.png",
     "static/media/like.svg": "/cats-info/static/media/like.87ed371465c7a6a1cd01.svg",
     "index.html": "/cats-info/index.html",
     "static/media/delete.svg": "/cats-info/static/media/delete.823b0cf1b0b7e9cb7cad.svg",
-    "main.5dd7cf1f.css.map": "/cats-info/static/css/main.5dd7cf1f.css.map",
-    "main.7e8df4cb.js.map": "/cats-info/static/js/main.7e8df4cb.js.map",
-    "592.694cf300.chunk.js.map": "/cats-info/static/js/592.694cf300.chunk.js.map"
+    "main.a48fe1bc.css.map": "/cats-info/static/css/main.a48fe1bc.css.map",
+    "main.dd50c6ee.js.map": "/cats-info/static/js/main.dd50c6ee.js.map",
+    "592.37b35f3a.chunk.js.map": "/cats-info/static/js/592.37b35f3a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5dd7cf1f.css",
-    "static/js/main.7e8df4cb.js"
+    "static/css/main.a48fe1bc.css",
+    "static/js/main.dd50c6ee.js"
   ]
 }
