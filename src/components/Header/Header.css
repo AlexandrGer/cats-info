@@ -5,6 +5,7 @@
 	min-height: 74px;
 	display: flex;
 	align-items: center;
+	border-bottom: 1px solid black;
 }
 
 .header__logo {

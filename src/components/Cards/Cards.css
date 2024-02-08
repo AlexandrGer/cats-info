@@ -15,6 +15,8 @@
 .cards {
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 }
 
 .cards__list {
@@ -53,7 +55,7 @@
 }
 
 .card__title {
-	width: 100%;
+	/* width: 100%; */
 	margin: 10px 0 0 5px;
 	color: #000;
 	font-size: 22px;
@@ -77,6 +79,10 @@
 	overflow: hidden;
 }
 
+.cards__link {
+	text-decoration: none;
+}
+
 .button__delete {
 	width: 18px;
 	height: 19px;
@@ -91,6 +97,7 @@
 	position: absolute;
 	top: 20px;
 	right: 20px;
+	/* z-index: 1; */
 }
 
 .button__toggle-like {
@@ -104,5 +111,8 @@
 	align-self: center;
 	opacity: 1;
 	transition: opacity 1s ease;
-	margin: 3px 3px 15px 3px;
+	position: absolute;
+	top: 325px;
+	right: 5px;
+	/* margin: 3px 3px 15px 3px; */
 }
